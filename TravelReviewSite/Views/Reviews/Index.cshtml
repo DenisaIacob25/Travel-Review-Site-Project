@@ -1,0 +1,69 @@
+﻿@model IEnumerable<TravelReviewSite.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatePosted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Topic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatePosted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Topic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReviewID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReviewID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReviewID })
+        </td>
+    </tr>
+}
+
+</table>
