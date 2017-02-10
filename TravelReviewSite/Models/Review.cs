@@ -16,7 +16,6 @@ namespace TravelReviewSite.Models
         public string Description { get; set; }
         public string Username { get; set; }
         public DateTime DatePosted { get; set; }
-        public string Country { get; set; }//
         
 
         [ForeignKey("Category")]
