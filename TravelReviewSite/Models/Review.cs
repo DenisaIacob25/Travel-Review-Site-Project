@@ -20,6 +20,7 @@ namespace TravelReviewSite.Models
 
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
+        public string ActivityType { get; set; }
         public virtual Category Category { get; set; }
     }
 }

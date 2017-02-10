@@ -173,6 +173,10 @@
     <Compile Include="Migrations\201702100108235_ChangedDateCategoryToActivityType.Designer.cs">
       <DependentUpon>201702100108235_ChangedDateCategoryToActivityType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702100118556_added ActivityType to foreignKey.cs" />
+    <Compile Include="Migrations\201702100118556_added ActivityType to foreignKey.Designer.cs">
+      <DependentUpon>201702100118556_added ActivityType to foreignKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
@@ -260,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702100108235_ChangedDateCategoryToActivityType.resx">
       <DependentUpon>201702100108235_ChangedDateCategoryToActivityType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702100118556_added ActivityType to foreignKey.resx">
+      <DependentUpon>201702100118556_added ActivityType to foreignKey.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
