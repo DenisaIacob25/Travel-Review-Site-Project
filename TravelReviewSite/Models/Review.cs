@@ -11,12 +11,13 @@ namespace TravelReviewSite.Models
     {
         [Key]
         public int ReviewID { get; set; }
+        public string City { get; set; }
+        public string Topic { get; set; }
+        public string Description { get; set; }
         public string Username { get; set; }
         public DateTime DatePosted { get; set; }
-        public string Country { get; set; }
-        public string City { get; set; }
-        public string Topic { get; set; }    
-        public string Description { get; set; }
+        public string Country { get; set; }//
+        
 
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
