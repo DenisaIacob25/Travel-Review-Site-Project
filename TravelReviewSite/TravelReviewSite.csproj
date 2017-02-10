@@ -204,6 +204,12 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Images\FullSizeRender %281%29.jpg" />
+    <Content Include="Images\FullSizeRender.jpg" />
+    <Content Include="Images\IMG_2066.JPG" />
+    <Content Include="Images\IMG_2918.JPG" />
+    <Content Include="Images\IMG_2922.JPG" />
+    <Content Include="Images\IMG_3178.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
