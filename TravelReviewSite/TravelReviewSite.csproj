@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201702100052443_DeletedCountryClassReview.Designer.cs">
       <DependentUpon>201702100052443_DeletedCountryClassReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702100108235_ChangedDateCategoryToActivityType.cs" />
+    <Compile Include="Migrations\201702100108235_ChangedDateCategoryToActivityType.Designer.cs">
+      <DependentUpon>201702100108235_ChangedDateCategoryToActivityType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Review.cs" />
@@ -253,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702100052443_DeletedCountryClassReview.resx">
       <DependentUpon>201702100052443_DeletedCountryClassReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702100108235_ChangedDateCategoryToActivityType.resx">
+      <DependentUpon>201702100108235_ChangedDateCategoryToActivityType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -46,7 +46,7 @@ namespace TravelReviewSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CategoryID,Country,DatePosted")] Category category)
+        public ActionResult Create([Bind(Include = "CategoryID,Country,ActivityType")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace TravelReviewSite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "CategoryID,Country,DatePosted")] Category category)
+        public ActionResult Edit([Bind(Include = "CategoryID,Country,ActivityType")] Category category)
         {
             if (ModelState.IsValid)
             {

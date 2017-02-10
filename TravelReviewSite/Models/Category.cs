@@ -11,7 +11,7 @@ namespace TravelReviewSite.Models
         [Key]
         public int CategoryID { get; set; }
         public string Country { get; set; }
-        public DateTime DatePosted { get; set; }
+        public string ActivityType { get; set; }
        
         public virtual ICollection<Review> Reviews { get; set; }
     }
