@@ -3,11 +3,12 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
+<div id="detailsHeading">
+    <h2>Full Review on @Html.DisplayFor(model => model.City)</h2>
+</div>
 
 <div>
-    <h4>Review</h4>
+    <h4>Review from @Html.DisplayFor(model => model.Username)</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>

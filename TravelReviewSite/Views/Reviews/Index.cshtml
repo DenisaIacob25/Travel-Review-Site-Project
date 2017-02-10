@@ -3,27 +3,30 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
+<div class="jumbotron">
+    <div class="container-fluid">
+        <h1><strong>Traveler Reviews</strong></h1>
+        </div>
+    </div>
 
 <div class="row">
     @foreach (var item in Model)
     {
     <div class="col-md-4">
         <div class="thumbnail">
-            <img src="~/Images/FullSizeRender (1).jpg" />       
+            <img src="..." alt="...">
             <div class="caption">
-                <h2>@Html.DisplayFor(modelItem => item.Category.Country)</h2>
+                <h2><strong>@Html.DisplayFor(modelItem => item.Category.Country)</strong></h2>
                 <h3>@Html.DisplayFor(model => item.City)</h3>
-                <h4><strong>@Html.DisplayFor(model => item.Topic)</strong></h4>
+                <h4>@Html.DisplayFor(model => item.Topic)</h4>
                 <p>@Html.DisplayFor(model => item.Description)</p>
                 <h6>@Html.DisplayFor(model => item.Username)</h6>
                 <h6>@Html.DisplayFor(model => item.DatePosted)</h6>
                 <p><a href="#" class="btn btn-primary" role="button">Read More!</a></p>
                 <ol class="breadcrumb">
-                    <li><a href="#"> @Html.ActionLink("Edit", "Edit", new { id = item.ReviewID }) </a></li>
-                    <li><a href="#">@Html.ActionLink("Details", "Details", new { id = item.ReviewID })</a></li>
-                    <li class="active">@Html.ActionLink("Delete", "Delete", new { id = item.ReviewID })</li>
+                    <li><a href="#"> @Html.ActionLink("Edit Review", "Edit", new { id = item.ReviewID }) </a></li>
+                    <li><a href="#">@Html.ActionLink("Read Review", "Details", new { id = item.ReviewID })</a></li>
+                    <li class="active">@Html.ActionLink("Delete Review", "Delete", new { id = item.ReviewID })</li>
                 </ol>
             </div>
         </div>

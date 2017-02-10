@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:#C6B9AA;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,49 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+/*Jumbotron*/
+div.jumbotron{
+    background-image: url(../Images/Coco_Loco_Beach_Pano_banner.jpg);
+    background-size: cover;
+    text-align:center;
+}
+div.jumbotron h1{
+     font-family:Calibri;
+     font-style:italic;
+    font-size:70px;
+    letter-spacing:3px;
+    color:black;
+}
+/*Thumbnails*/
+div.thumbnail {
+    text-align: center;
+    font-family:Calibri;
+    font-style:italic;
+    background-color:rgba(198,185,170,0.4)
+}
+.thumbnail{
+    border:3px solid;
+    border-color:#E73473;
+}
+/*Buttons*/
+a.btn.btn-primary{
+    color:black;
+    background-color:rgba(0,153,255,0.5);
+    border-color:#E73473;
+    border-width:3px;
+}
+/*Breadcrumbs*/
+ol.breadcrumb {
+    background-color:rgba(0,153,255,0.5);
+   
+}
+ol.breadcrumb a {
+     color:black;
+}
+a:hover{
+    color:#E73473;
+}
+.breadcrumb > li + li:before{
+    color:black;
 }

@@ -15,12 +15,11 @@ namespace TravelReviewSite.Models
         public string Topic { get; set; }
         public string Description { get; set; }
         public string Username { get; set; }
+        [Display (Name ="Date: mm/dd/yyyy")]
         public DateTime DatePosted { get; set; }
-        
 
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
-        public string ActivityType { get; set;}
         public virtual Category Category { get; set; }
     }
 }
