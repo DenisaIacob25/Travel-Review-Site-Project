@@ -11,9 +11,9 @@
     {
     <div class="col-md-4">
         <div class="thumbnail">
-            <img src="..." alt="...">
+            <img src="~/Images/FullSizeRender (1).jpg" />       
             <div class="caption">
-                <h2>country</h2>
+                <h2>@Html.DisplayFor(modelItem => item.Category.Country)</h2>
                 <h3>@Html.DisplayFor(model => item.City)</h3>
                 <h4><strong>@Html.DisplayFor(model => item.Topic)</strong></h4>
                 <p>@Html.DisplayFor(model => item.Description)</p>
