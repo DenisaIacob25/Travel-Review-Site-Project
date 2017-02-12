@@ -1,7 +1,10 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color:#C6B9AA;
+    background-color:#DAD4D3;
+    font-family:Calibri;
+    font-style:italic;
+    font-size:16px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,44 +26,74 @@ select,
 textarea {
     max-width: 280px;
 }
-/*Jumbotron*/
-div.jumbotron{
-    background-image: url(../Images/Coco_Loco_Beach_Pano_banner.jpg);
-    background-size: cover;
+/*Navbar*/
+.navbar-inverse{
+    background-color:rgb(178,200,188);
+    border-color:#133265;
+}
+.navbar-fixed-top{
+    border-bottom-width:5px;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color:#133265;
+    font-size:14px;
     text-align:center;
 }
-div.jumbotron h1{
-     font-family:Calibri;
+.navbar-inverse .navbar-brand{
+     color:#133265;
      font-style:italic;
-    font-size:70px;
+     font-weight:600;
+     font-size:26px;
+}
+.btn-default{
+    font-weight:400;
+    color:#133265;
+    background-color:rgb(178,200,188);
+    border-color:#133265;
+}
+/*Jumbotron*/
+div.jumbotron {
+    background-image: url('../Images/Coco_Loco_Beach_Pano_banner.jpg');
+    background-size: cover;
+    text-align: center;
+    margin-top:5px;
+}
+div.jumbotron h1{
+   font-family:Calibri;
+   font-style:italic;
+    font-size:90px;
     letter-spacing:3px;
     color:black;
+}
+div.container h2{
+    color:white;
 }
 /*Thumbnails*/
 div.thumbnail {
     text-align: center;
     font-family:Calibri;
     font-style:italic;
-    background-color:rgba(198,185,170,0.4)
+    background-color:#DAD4D3;
 }
 .thumbnail{
     border:3px solid;
-    border-color:#E73473;
+    border-color:#133265;
 }
 /*Buttons*/
 a.btn.btn-primary{
-    color:black;
-    background-color:rgba(0,153,255,0.5);
-    border-color:#E73473;
+    color:#133265;
+    border-color:#133265;
     border-width:3px;
+    background-color:rgb(178,200,188);
 }
 /*Breadcrumbs*/
 ol.breadcrumb {
-    background-color:rgba(0,153,255,0.5);
+    background-color:rgb(178,200,188);
    
 }
 ol.breadcrumb a {
-     color:black;
+     color:#133265;
+     font-size:15px;
 }
 a:hover{
     color:#E73473;
@@ -68,3 +101,6 @@ a:hover{
 .breadcrumb > li + li:before{
     color:black;
 }
+/*Details page*/
+
+/*Footer*/
