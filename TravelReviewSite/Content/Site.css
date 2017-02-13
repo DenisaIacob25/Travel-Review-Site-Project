@@ -82,6 +82,9 @@ div.thumbnail {
 div.thumbnail h2{
     color:black;
 }
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+   
+}
 /*Buttons*/
 a.btn.btn-primary{
     color:#133265;
