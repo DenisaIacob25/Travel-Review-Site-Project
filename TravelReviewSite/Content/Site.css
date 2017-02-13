@@ -79,6 +79,9 @@ div.thumbnail {
     border:3px solid;
     border-color:#133265;
 }
+div.thumbnail h2{
+    color:black;
+}
 /*Buttons*/
 a.btn.btn-primary{
     color:#133265;
@@ -101,6 +104,3 @@ a:hover{
 .breadcrumb > li + li:before{
     color:black;
 }
-/*Details page*/
-
-/*Footer*/
